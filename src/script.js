@@ -44,7 +44,7 @@ class ObjectGroup {
     }
 
     static createObject = (title, objectGeometry) => {
-        const objectTexture = new THREE.TextureLoader().load(`textures/${title}.jpg`);
+        const objectTexture = new THREE.TextureLoader().load(`textures${title}.jpg`);
         const objectMaterial = new THREE.MeshPhongMaterial({ map: objectTexture });
         const objectMesh = new THREE.Mesh(objectGeometry, objectMaterial);
 
